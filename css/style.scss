@@ -1,0 +1,32 @@
+body {
+	font-family: Helvetica;
+}
+
+.checkbox input {
+    display:none;
+}
+
+.checkbox span{
+    display: inline-block;
+    background-color: white;
+    border: 3px solid #bdc3c7;
+    width: 9px; height: 9px;
+    border-radius: 9px;
+    vertical-align: middle;
+    position: relative;
+}
+
+input:checked + span {
+    border-color: #2ecc71;
+}
+
+input:checked + span:after {
+    content: '';
+    display:block;
+    width: 5px; height: 5px;
+    position: absolute;
+    background-color: #2ecc71;
+    top: 2px;
+    left: 2px;
+    border-radius: 1px;
+}

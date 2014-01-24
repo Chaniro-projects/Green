@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>Test !</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/theme.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/icomoon.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+<body>
+    <div id="app" class="container">
+        <div class="row">
+            <div class="block col-md-offset-1 col-md-2">
+                <h3>Check boxes</h3>
+                <label for="tb1" class="checkbox">
+                    <input type="checkbox" value="" id="tb1" />
+                    <span><span class="icon">c</span></span>
+                    <span>Item</span>
+                </label>
+                <br />
+                <label for="tb2" class="checkbox">
+                    <input type="checkbox" value="" id="tb2" />
+                    <span><span class="icon">c</span></span>
+                    <span>Item</span>
+                </label>
+            </div>
+
+            <div class="block col-md-2 col-md-offset-1">
+                <h3>Radio buttons</h3>
+                <label for="test1" class="radio">
+                    <span></span>
+                    <input type="radio" name="g1" value="1" id="test1">
+                    Option<br>
+                </label>
+                <label for="test2" class="radio">
+                    <span></span>
+                    <input type="radio" name="g1" value="2" id="test2">
+                    Option<br>
+                </label>
+                <label for="test3" class="radio">
+                    <span></span>
+                    <input type="radio" name="g1" value="3" id="test3">
+                    Option<br>
+                </label>
+            </div>
+
+            <div class="block col-md-2 col-md-offset-1">
+                <h3>Text inputs</h3>
+                <input type="text" value="" placeholder="Enter text..."/> <br /><br />
+                <input type="text" value="" placeholder="Error" class="error"/>
+            </div>
+
+            <div class="block col-md-2 col-md-offset-1 text-center" style="position: relative;z-index: 1;display: inline-block;">
+                <h3>Buttons</h3>
+                <button type="button" class="btn-1e">Button</button> <br /><br />
+                <button type="button" class="bt-blue btn-3d1">Button</button> <br /><br />
+                <button type="button" class="bt-red btn-3d2" value="Button">Button</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="block col-md-5 col-md-offset-3 text-center" style="position: relative;z-index: 1;display: inline-block;">
+                <h3>Test panel</h3>
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px">
+                    <line x1="0" y1="0" x2="100" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    <line x1="100" y1="0" x2="100" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    <line x1="100" y1="100" x2="0" y2="100" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    <line x1="0" y1="100" x2="0" y2="0" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    <path d="M 25,50 L 40,65 L 70,35" stroke-dasharray="70 70">
+                        <animate id="anim" attributeName="stroke-dashoffset" dur="0.3s" begin="0s" from="70" to="0"/>
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
